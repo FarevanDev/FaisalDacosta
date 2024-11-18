@@ -1,0 +1,160 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+main {
+    background-color: #31708e;
+    color: #f7f9fb;
+    padding-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 50px;
+}
+
+main p {
+    font-size: 24px;
+    margin-left: 20px;
+    /* min-width: 300px; */
+}
+
+main img {
+    max-height: 400px;
+    border-radius: 20px;
+    object-fit: contain;
+    display: block;
+}
+
+.main_box {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-right: 30px;
+}
+
+.main_box b {
+    color: white;
+    font-weight: 800;
+}
+
+hr {
+    border: 2px dotted #f7f9fb;
+    border-radius: 5px;
+    margin: 2px 10px;
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 40px;
+    margin-top: 0;
+    align-items: center;
+}
+
+
+.contact_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info_box {
+    margin: 30px 10px;
+    margin-top: 60px;
+    background-color: #70a1a8;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 8px solid #0edff7;
+    box-shadow: 2.5px 5px 15px black;
+}
+
+
+.info_box h2 {
+    margin-left: 18px;
+    font-size: 25px;
+}
+
+.detail_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_box a {
+    text-decoration: underline;
+}
+
+.detail_box p span{
+    font-size: 40px;
+}
+
+.contact_form_box {
+    margin: 40px;
+    align-self: center;
+    max-width: 550px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 750px) {
+    .main_box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact_content {
+        flex-direction: column;
+    }
+
+    /* .info_box h2 {
+        font-size: 18px;
+    }
+
+    .detail_box p {
+        font-size: 16px;
+    }
+
+    .detail_box p a {
+        font-size: 16px;
+    } */
+  }
+
+  @media only screen and (max-width: 920px) {
+    .contact_container {
+        flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .info_box {
+        font-size: 4px;
+        min-width: 50px;
+    }
+
+    .info_box p {
+        font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .info_box {
+        font-size: 4px;
+        min-width: 50px;
+    }
+
+    .info_box p {
+        font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 335px) {
+    .info_box {
+        font-size: 4px;
+        min-width: 50px;
+    }
+
+    .info_box p {
+        font-size: 10px;
+    }
+  }

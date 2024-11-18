@@ -1,0 +1,129 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+main {
+    background-color: #31708e;
+    margin: 0;
+    padding: 5px 20px;
+    color: #f7f9fb;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #f7f9fb;
+    font-size: 50px;
+    margin: 0;
+    margin: 20px;
+}
+
+h2 {
+    color: #2da3b2;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+    color: #0b567b;
+}
+
+b {
+    color: #0b567b;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post {
+    background-color: white;
+    color: #31708e;
+    font-size: 17px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.blog-summary {
+    display: block;
+}
+
+.blog-full-content {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-content {
+    display: block;
+    min-width: 15px;
+    max-width: 95px;
+    padding: 10px;
+    background-color: #e3a922;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.load-more,
+.load-previous {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f7f9fb;
+    background-color: #70a1a8;
+    display: block;
+    min-width: 18%;
+    max-width: 55%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+ 
+.toggle-content:hover {
+    background-color: #e3a9229e;
+}
+
+.load-more:hover, 
+.load-previous:hover {
+    background-color: #70a1a88f;
+}
+
+.toggle-content {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog-post {
+        font-size: 14px;
+    }
+   }

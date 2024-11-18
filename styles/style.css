@@ -1,0 +1,281 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+/* 
+
+Colour Key
+
+background: #f7f9fb
+
+ main: #31708e New: #31708e
+
+ Secondary: #9e9e9e New: #efd164
+
+ ALternative Box colour: #b8b8b8
+
+
+*/
+
+
+
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+ 
+ body
+ {
+   margin: 0;
+   padding: 0;
+   background-color: #f7f9fb;
+   color: rgb(96, 96, 96);
+   font-family: "Mulish", sans-serif;
+   overflow-x: hidden;
+   width: 100%;
+}
+
+button {
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+header { 
+  padding: 15px 10px;
+  background-color: #efd164;
+  font-weight: bold;
+  color: #415f84;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header div {
+  margin: 2px 10px;
+}
+
+header a {
+  color: #31708e;
+}
+
+ .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  margin-bottom: 20px;
+ }
+
+ .logo_box {
+  display: flex;
+  justify-content: center;
+  
+ }
+
+ .logo a {
+  margin: 20px;
+ }
+
+ .small_logo {
+  right: 20px;
+  text-align: end;
+  margin-right: 20px;
+  margin-bottom: 20px;
+ }
+
+ .small_logo a {
+  justify-content: flex-end;
+  font-size: 30px;
+ }
+
+ 
+
+ 
+
+ .main_menu {
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+  flex-grow: 1;
+  align-content: start;
+  column-gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 34px;
+ }
+ .main_menu .on span {
+  display: inline-block;
+  text-decoration-color: #e3a922;
+  border-radius: 10px;
+ }
+
+ .main_menu .on span::after {
+  content: '';
+  height: 4px;
+  background: #e3a922;
+  border-radius: 5px;
+  display: block
+ }
+ 
+
+ .main_menu a {
+    text-decoration: none;
+    margin: 20px 5px 20px 5px;
+    font-size: 20px;
+    color: #31708e;
+    
+ }
+
+ #side_bar
+ {
+   display: block;
+   top: 50px;
+   left: 20px;
+   position: relative;
+   z-index: 1;
+   user-select: none;
+ }
+ 
+ #side_bar a
+ {
+   text-decoration: none;
+   color: #31708e;
+   transition: color 0.5s ease;
+ }
+ 
+ #side_bar a:hover
+ {
+   color: #31718ea9;
+ }
+ 
+ 
+ #side_bar input
+ {
+   display: block;
+   position: absolute;
+   top: -6.5px;
+   left: -4.5px;
+   width: 40px;
+   height: 32px;
+   opacity: 0;
+   z-index: 2;
+ }
+
+ #side_bar span
+ {
+   display: block;
+   position: relative;
+   border-radius: 30px;
+   background: #31708e;
+   z-index: 1;
+   width: 32px;
+   height: 4px;
+   margin-bottom: 5px;
+   transform-origin: 4px 0px;
+   transition: transform 0.5s cubic-bezier(0.8,0.3,0.06,1.1),
+               background 0.5s cubic-bezier(0.8,0.3,0.06,1.1),
+               opacity 0.65s ease;
+ }
+
+ 
+ #side_bar span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #side_bar span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ #side_bar input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #e3a922;
+ }
+ 
+ #side_bar input:checked ~ span:nth-last-child(3)
+ {
+  transform: rotate(0deg) scale(0.2, 0.2);
+  opacity: 0;
+ }
+ 
+ #side_bar input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+ #menu
+ {
+   position: absolute;
+   background: #bbd4e6;
+   list-style-type: none;
+   border-radius: 50px;
+   width: 150px;
+   margin: -250px 0 0 -50px;
+   padding: 50px 30px 60% 100px;
+   padding-top: 220px;
+   -webkit-font-smoothing: antialiased; /* This is to stop the flickering of text in safari (macOS) */
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+ }
+ 
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ #side_bar input:checked ~ ul
+ {
+   transform: none;
+ }
+ 
+
+ /* This is to make the page responsive, adjusts the contents of the nav to fit the size of the page */
+ @media only screen and (max-width: 850px) {
+  .main_menu {
+    display: none;
+  }
+
+  .head {
+    display: none;
+  }
+
+  .logo_box{
+    display: none;
+  }
+ }
+
+ @media only screen and (min-width: 850px) {
+  #side_bar {
+    display: none;
+  }
+
+  .small_logo {
+    display: none;
+  }
+
+ }
+
+ @media only screen and (max-width: 800px) {
+    header {
+      font-size: 14px;
+    }
+ }
+
+ 
+
+
+ 
+

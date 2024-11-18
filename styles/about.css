@@ -1,0 +1,92 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+main {
+    padding: 5px 20px;
+    color: #f7f9fb;
+    background-color: #31708e;
+    padding-bottom: 80px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+button {
+    background-color: #e3a922;
+    color: #f7f9fb;
+    font-size: 24px;
+    border-radius: 40px;
+    border: none;
+    padding: 20px 50px;
+    text-align: center;
+    display: flex;
+    margin: 20px 10px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.about_content_box {
+    display: flex;
+}
+
+.about_content_box img {
+    border-radius: 20px;
+}
+
+.about_content_box_2 {
+    margin-top: 60px;
+}
+
+.text_box {
+    display: block;
+    min-width: 300px;
+    max-width: 800px;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.text_box h2 {
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.text_box p {
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.text_box p b {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.about_content_box img {
+    max-width: 400px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 760px) {
+    .about_content_box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about_content_box_2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+   }
+
+@media only screen and (max-width: 450px) {
+    .about_content_box img {
+        margin: 10px 20px;
+        max-width: 350px;
+    }
+    
+}

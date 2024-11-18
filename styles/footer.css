@@ -1,0 +1,43 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+footer {
+    display: flex;
+    padding: 20px 40px;
+    color: #f7f9fb;
+    background-color: #31708e;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer_menu_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    
+}
+
+.footer_menu_box a {
+    text-decoration: none;
+    color: #f7f9fb;
+}
+
+.footer_contact_box a {
+    color: aqua;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        font-size: 10px;
+    }
+  
+   }
+
+@media only screen and (max-width: 350px) {
+    footer {
+        font-size: 8px;
+    }
+
+}

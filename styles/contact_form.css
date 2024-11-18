@@ -1,0 +1,74 @@
+/*  COPYRIGHT (c) 2024, Faisal Dacosta & Farevan Dev, All rights reserved.  */
+
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    margin: 30px 10px;
+}
+
+.contact_box h1 {
+    margin: 0;
+    margin: 30px 10px;
+    font-size: 50px;
+    color: #e3a922;
+}
+
+.contact_box input{
+    width: 75%;
+    background-color: white;
+    margin: 10px 20px;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+ }
+
+ .contact_box textarea {
+    width: 75%;
+    background-color: white;
+    margin: 10px 20px;
+    font-size: 16px;
+    padding: 10px 5px;
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 30px;
+    border-width: 2px;
+    font-family: "Mulish", sans-serif;
+    resize: vertical;
+    min-height: 144px;
+ }
+
+ .contact_box input:focus-within {
+    outline: none;
+    border-color: #e3a922;
+    border-width: 3px;
+ }
+
+ .contact_box textarea:focus-within {
+    outline: none;
+    border-color: #e3a922;
+    border-width: 3px;
+ }
+
+ .contact_box button {
+    background-color: #e3a922;
+    color: white;
+    font-size: 18px;
+    border-radius: 40px;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    display: flex;
+    margin: 10px 20px;
+ }
+
+ .contact_box button:hover {
+    opacity: 75%;
+    cursor: pointer;
+ }
