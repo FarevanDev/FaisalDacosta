@@ -30,6 +30,10 @@ button {
     cursor: pointer;
 }
 
+li {
+   font-weight: lighter;
+}
+
 .about_content_box {
     display: flex;
 }
