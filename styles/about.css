@@ -30,8 +30,9 @@ button {
     cursor: pointer;
 }
 
-li {
+.text_box ul li {
    font-weight: lighter;
+   margin: 20px 2px;
 }
 
 .about_content_box {
